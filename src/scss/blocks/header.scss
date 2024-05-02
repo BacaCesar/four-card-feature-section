@@ -1,14 +1,20 @@
+@use '../mixins/resposive.scss' as *;
 .header{
     background-color: white;
     &__top{
         height: 161px;
-        width: 311px;
+        width: 375px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         margin: 85px 32px 76px 32px;
-
+        @include responsive(desktop){
+           height: 168px;
+           width: 540px;
+           margin-inline: auto;
+           margin-bottom: 64px;
+        }
     }
 }

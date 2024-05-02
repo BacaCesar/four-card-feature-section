@@ -1,8 +1,19 @@
+@use '../mixins/resposive.scss' as *;
 .group-cards{
     display: flex;
     flex-direction: column  ;
     align-items: center;
     gap: 25px;
+    position: relative;
+    @include responsive(desktop){
+
+        position: absolute;
+        width: 1110px;
+        height: 530px;
+        justify-content: center;
+        left: 164px;
+        
+     }
 }
 .card{
     height: 222px;
@@ -14,7 +25,13 @@
     flex-direction: column;
     align-items: start;
     justify-content: flex-start;
-
+    &__green{
+        border-top: solid var(--green);
+        @include responsive(desktop){
+        position: absolute;
+        left: 45px;
+         }
+    }
     &__red{
     border-top: solid var(--red);
     }
@@ -23,5 +40,9 @@
     }
     &__blue{
     border-top: solid var(--blue);
+    @include responsive(desktop){
+        position: absolute;
+        right: 45px;
+         }
     }
 }

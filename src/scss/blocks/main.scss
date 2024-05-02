@@ -1,3 +1,10 @@
+@use '../mixins/resposive.scss' as *;
 .main{
     margin-bottom: 73px;
+    position: relative;
+    @include responsive(desktop){
+        width: 1110px;
+        height: 530px;
+        margin-bottom: 80px;
+     }
 }

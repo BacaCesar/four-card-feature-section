@@ -1,15 +1,28 @@
+@use '../mixins/resposive.scss' as *;
 .title-l{
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-size: 24px;
     letter-spacing: 0.17px;
     color: var(--gray);
+    @include responsive(desktop){
+        width: 540px;
+        height: 168px;
+        font-size: 36px;
+        letter-spacing: 0.25px;
+     }
     &--bold{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 24px;
     letter-spacing: 0.17px;
     color: var(--gray);
+    @include responsive(desktop){
+        width: 540px;
+        height: 168px;
+        font-size: 36px;
+        letter-spacing: 0.25px;
+    }
     }
 }
 .title-m{

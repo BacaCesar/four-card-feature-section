@@ -1,3 +1,4 @@
+@use '../mixins/resposive.scss' as *;
 .text-top{
  width: 311px;
 font-family: "Poppins", sans-serif;
@@ -8,6 +9,10 @@ color: hsla(234, 12%, 34%, 0.5);
 line-height: 25px;
 font-size: 15px;
 margin:16px 28px;
+@include responsive(desktop){
+    width: 540px;
+    margin-inline: auto;
+ }
 }
 
 .text{
