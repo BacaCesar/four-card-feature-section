@@ -2,22 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>four-card-feature-section</title>
   </head>
-  <body>
-    <div class="card">
-      <h1 class="title">Titulo Principal</h1>
-      <p class="paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nobis
-        eos magnam earum numquam dignissimos eveniet asperiores a, minus neque
-        quibusdam odio est in eaque tempora consequatur veniam similique libero?
-      </p>
-      <a class="card__button" href="#">Pincha aquí</a>
+  <header class="header">
+    <div class="header__top">
+      <span class="title-l">Reliable, efficient delivery</span>
+      <span class="title-l--bold">Powered by Technology</span>
+      <p class="text-top">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
     </div>
+  </header>
+  <body>
+    <main class="main">
+      <section class="group-cards">
+        <div class="card card__green">
+          <h2 class="title-m">Supervisor</h2>
+          <p class="text">Monitors activity to identify project roadblocks</p>
+          <img class="icon" src="./assets/images/icon-supervisor.svg" alt="icon.supervisor">
+        </div>
+        <div class="card card__red">
+          <h2 class="title-m">Team Builder</h2>
+          <p class="text">Scans our talent network to create the optimal team for your project</p>
+          <img class="icon" src="./assets/images/icon-team-builder.svg">
+        </div>
+        <div class="card card__yellow">
+          <h2 class="title-m">Karma</h2>
+          <p class="text">Regularly evaluates our talent to ensure quality</p>
+          <img class="icon" src="./assets/images/icon-karma.svg">
+        </div>
+        <div class="card card__blue">
+          <h2 class="title-m">Calculator</h2>
+          <p class="text">Uses data from past projects to provide better delivery estimates
+          <img class="icon" src="./assets/images/icon-calculator.svg">
+        </div>
+      </section>
+
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

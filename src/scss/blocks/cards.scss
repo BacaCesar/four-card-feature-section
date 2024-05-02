@@ -1,0 +1,27 @@
+.group-cards{
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    gap: 25px;
+}
+.card{
+    height: 222px;
+    width: 311px;
+    border-radius: 8px;
+    border-top: solid var(--green);
+    box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.25) ;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+
+    &__red{
+    border-top: solid var(--red);
+    }
+    &__yellow{
+    border-top: solid var(--yellow);
+    }
+    &__blue{
+    border-top: solid var(--blue);
+    }
+}

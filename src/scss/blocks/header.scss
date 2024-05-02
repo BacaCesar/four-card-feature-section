@@ -1,0 +1,14 @@
+.header{
+    background-color: white;
+    &__top{
+        height: 161px;
+        width: 311px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 85px 32px 76px 32px;
+
+    }
+}
